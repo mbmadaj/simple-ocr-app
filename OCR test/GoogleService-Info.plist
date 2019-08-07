@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>CLIENT_ID</key>
+	<string>352747697837-a0odfl7ak5c4bkblar0vhv3eff1ns3sb.apps.googleusercontent.com</string>
+	<key>REVERSED_CLIENT_ID</key>
+	<string>com.googleusercontent.apps.352747697837-a0odfl7ak5c4bkblar0vhv3eff1ns3sb</string>
+	<key>API_KEY</key>
+	<string>AIzaSyBNUdO63vW095P4cNz9qKf7I7RcVIDy3sw</string>
+	<key>GCM_SENDER_ID</key>
+	<string>352747697837</string>
+	<key>PLIST_VERSION</key>
+	<string>1</string>
+	<key>BUNDLE_ID</key>
+	<string>mm.OCR-test</string>
+	<key>PROJECT_ID</key>
+	<string>ocr-test-ade71</string>
+	<key>STORAGE_BUCKET</key>
+	<string>ocr-test-ade71.appspot.com</string>
+	<key>IS_ADS_ENABLED</key>
+	<false></false>
+	<key>IS_ANALYTICS_ENABLED</key>
+	<false></false>
+	<key>IS_APPINVITE_ENABLED</key>
+	<true></true>
+	<key>IS_GCM_ENABLED</key>
+	<true></true>
+	<key>IS_SIGNIN_ENABLED</key>
+	<true></true>
+	<key>GOOGLE_APP_ID</key>
+	<string>1:352747697837:ios:80b171a09e7252fd</string>
+	<key>DATABASE_URL</key>
+	<string>https://ocr-test-ade71.firebaseio.com</string>
+</dict>
+</plist>
