@@ -6,5 +6,7 @@ target 'OCR test' do
   use_frameworks!
 
   # Pods for OCR test
-
+  pod 'Firebase/Core'
+  pod 'Firebase/MLVision'
+  pod 'Firebase/MLVisionTextModel'
 end
