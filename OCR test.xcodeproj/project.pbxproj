@@ -12,9 +12,11 @@
 		764EC33822FB6502000B0624 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 764EC33622FB6502000B0624 /* Main.storyboard */; };
 		764EC33A22FB6503000B0624 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 764EC33922FB6503000B0624 /* Assets.xcassets */; };
 		764EC33D22FB6503000B0624 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 764EC33B22FB6503000B0624 /* LaunchScreen.storyboard */; };
+		A4D54513D5612E0EE1A49226 /* Pods_OCR_test.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8FAC4C01D91927DE69E6FA33 /* Pods_OCR_test.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		42C60D35C9F037C04C80A021 /* Pods-OCR test.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-OCR test.release.xcconfig"; path = "Target Support Files/Pods-OCR test/Pods-OCR test.release.xcconfig"; sourceTree = "<group>"; };
 		764EC32F22FB6502000B0624 /* OCR test.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "OCR test.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		764EC33222FB6502000B0624 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		764EC33422FB6502000B0624 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -22,6 +24,8 @@
 		764EC33922FB6503000B0624 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		764EC33C22FB6503000B0624 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		764EC33E22FB6503000B0624 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		8FAC4C01D91927DE69E6FA33 /* Pods_OCR_test.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_OCR_test.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		F5AA51FFE6143584F06ACD84 /* Pods-OCR test.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-OCR test.debug.xcconfig"; path = "Target Support Files/Pods-OCR test/Pods-OCR test.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -29,17 +33,38 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A4D54513D5612E0EE1A49226 /* Pods_OCR_test.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		1C57BC406EB35C702F3280E1 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				F5AA51FFE6143584F06ACD84 /* Pods-OCR test.debug.xcconfig */,
+				42C60D35C9F037C04C80A021 /* Pods-OCR test.release.xcconfig */,
+			);
+			name = Pods;
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		3261FCEA1C533CE498749CBD /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				8FAC4C01D91927DE69E6FA33 /* Pods_OCR_test.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		764EC32622FB6502000B0624 = {
 			isa = PBXGroup;
 			children = (
 				764EC33122FB6502000B0624 /* OCR test */,
 				764EC33022FB6502000B0624 /* Products */,
+				1C57BC406EB35C702F3280E1 /* Pods */,
+				3261FCEA1C533CE498749CBD /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -71,6 +96,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 764EC34122FB6503000B0624 /* Build configuration list for PBXNativeTarget "OCR test" */;
 			buildPhases = (
+				3E669779000E678F086FEB1F /* [CP] Check Pods Manifest.lock */,
 				764EC32B22FB6502000B0624 /* Sources */,
 				764EC32C22FB6502000B0624 /* Frameworks */,
 				764EC32D22FB6502000B0624 /* Resources */,
@@ -128,6 +154,31 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		3E669779000E678F086FEB1F /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-OCR test-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		764EC32B22FB6502000B0624 /* Sources */ = {
@@ -279,6 +330,7 @@
 		};
 		764EC34222FB6503000B0624 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = F5AA51FFE6143584F06ACD84 /* Pods-OCR test.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -298,6 +350,7 @@
 		};
 		764EC34322FB6503000B0624 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 42C60D35C9F037C04C80A021 /* Pods-OCR test.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
