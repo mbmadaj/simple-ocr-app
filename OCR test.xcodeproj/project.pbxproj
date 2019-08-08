@@ -8,11 +8,20 @@
 
 /* Begin PBXBuildFile section */
 		764EC33322FB6502000B0624 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 764EC33222FB6502000B0624 /* AppDelegate.swift */; };
-		764EC33522FB6502000B0624 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 764EC33422FB6502000B0624 /* ViewController.swift */; };
+		764EC33522FB6502000B0624 /* ScanViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 764EC33422FB6502000B0624 /* ScanViewController.swift */; };
 		764EC33822FB6502000B0624 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 764EC33622FB6502000B0624 /* Main.storyboard */; };
 		764EC33A22FB6503000B0624 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 764EC33922FB6503000B0624 /* Assets.xcassets */; };
 		764EC33D22FB6503000B0624 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 764EC33B22FB6503000B0624 /* LaunchScreen.storyboard */; };
 		764EC34522FB6CF0000B0624 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 764EC34422FB6CF0000B0624 /* GoogleService-Info.plist */; };
+		764EC34822FB7CB2000B0624 /* UIButton+Appearance.swift in Sources */ = {isa = PBXBuildFile; fileRef = 764EC34722FB7CB2000B0624 /* UIButton+Appearance.swift */; };
+		764EC34A22FB7F0A000B0624 /* ResultViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 764EC34922FB7F0A000B0624 /* ResultViewController.swift */; };
+		764EC34C22FCA424000B0624 /* UIImage+Rotation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 764EC34B22FCA424000B0624 /* UIImage+Rotation.swift */; };
+		764EC35222FCB254000B0624 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 764EC35422FCB254000B0624 /* Localizable.strings */; };
+		764EC35622FCB2B4000B0624 /* String+Localize.swift in Sources */ = {isa = PBXBuildFile; fileRef = 764EC35522FCB2B4000B0624 /* String+Localize.swift */; };
+		764EC35822FCB56A000B0624 /* Helpers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 764EC35722FCB56A000B0624 /* Helpers.swift */; };
+		764EC35B22FCB735000B0624 /* LoadingIndicator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 764EC35A22FCB735000B0624 /* LoadingIndicator.swift */; };
+		764EC35D22FCB84E000B0624 /* UIView+Constraints.swift in Sources */ = {isa = PBXBuildFile; fileRef = 764EC35C22FCB84D000B0624 /* UIView+Constraints.swift */; };
+		764EC35F22FCBD94000B0624 /* HistoryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 764EC35E22FCBD94000B0624 /* HistoryViewController.swift */; };
 		A4D54513D5612E0EE1A49226 /* Pods_OCR_test.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8FAC4C01D91927DE69E6FA33 /* Pods_OCR_test.framework */; };
 /* End PBXBuildFile section */
 
@@ -20,12 +29,21 @@
 		42C60D35C9F037C04C80A021 /* Pods-OCR test.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-OCR test.release.xcconfig"; path = "Target Support Files/Pods-OCR test/Pods-OCR test.release.xcconfig"; sourceTree = "<group>"; };
 		764EC32F22FB6502000B0624 /* OCR test.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "OCR test.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		764EC33222FB6502000B0624 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		764EC33422FB6502000B0624 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		764EC33422FB6502000B0624 /* ScanViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScanViewController.swift; sourceTree = "<group>"; };
 		764EC33722FB6502000B0624 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		764EC33922FB6503000B0624 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		764EC33C22FB6503000B0624 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		764EC33E22FB6503000B0624 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		764EC34422FB6CF0000B0624 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		764EC34722FB7CB2000B0624 /* UIButton+Appearance.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIButton+Appearance.swift"; sourceTree = "<group>"; };
+		764EC34922FB7F0A000B0624 /* ResultViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResultViewController.swift; sourceTree = "<group>"; };
+		764EC34B22FCA424000B0624 /* UIImage+Rotation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIImage+Rotation.swift"; sourceTree = "<group>"; };
+		764EC35322FCB254000B0624 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
+		764EC35522FCB2B4000B0624 /* String+Localize.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+Localize.swift"; sourceTree = "<group>"; };
+		764EC35722FCB56A000B0624 /* Helpers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Helpers.swift; sourceTree = "<group>"; };
+		764EC35A22FCB735000B0624 /* LoadingIndicator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoadingIndicator.swift; sourceTree = "<group>"; };
+		764EC35C22FCB84D000B0624 /* UIView+Constraints.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+Constraints.swift"; sourceTree = "<group>"; };
+		764EC35E22FCBD94000B0624 /* HistoryViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HistoryViewController.swift; sourceTree = "<group>"; };
 		8FAC4C01D91927DE69E6FA33 /* Pods_OCR_test.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_OCR_test.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		F5AA51FFE6143584F06ACD84 /* Pods-OCR test.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-OCR test.debug.xcconfig"; path = "Target Support Files/Pods-OCR test/Pods-OCR test.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -80,15 +98,64 @@
 		764EC33122FB6502000B0624 /* OCR test */ = {
 			isa = PBXGroup;
 			children = (
+				764EC35922FCB726000B0624 /* Views */,
+				764EC34F22FCB201000B0624 /* Supporting Files */,
+				764EC34E22FCB10D000B0624 /* ViewControllers */,
+				764EC34D22FCB0E2000B0624 /* Navigation */,
+				764EC34622FB7C9E000B0624 /* Extensions */,
 				764EC33222FB6502000B0624 /* AppDelegate.swift */,
-				764EC33422FB6502000B0624 /* ViewController.swift */,
-				764EC33622FB6502000B0624 /* Main.storyboard */,
-				764EC33922FB6503000B0624 /* Assets.xcassets */,
-				764EC33B22FB6503000B0624 /* LaunchScreen.storyboard */,
 				764EC33E22FB6503000B0624 /* Info.plist */,
 				764EC34422FB6CF0000B0624 /* GoogleService-Info.plist */,
 			);
 			path = "OCR test";
+			sourceTree = "<group>";
+		};
+		764EC34622FB7C9E000B0624 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				764EC34722FB7CB2000B0624 /* UIButton+Appearance.swift */,
+				764EC34B22FCA424000B0624 /* UIImage+Rotation.swift */,
+				764EC35522FCB2B4000B0624 /* String+Localize.swift */,
+				764EC35722FCB56A000B0624 /* Helpers.swift */,
+				764EC35C22FCB84D000B0624 /* UIView+Constraints.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		764EC34D22FCB0E2000B0624 /* Navigation */ = {
+			isa = PBXGroup;
+			children = (
+				764EC33622FB6502000B0624 /* Main.storyboard */,
+			);
+			path = Navigation;
+			sourceTree = "<group>";
+		};
+		764EC34E22FCB10D000B0624 /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				764EC34922FB7F0A000B0624 /* ResultViewController.swift */,
+				764EC33422FB6502000B0624 /* ScanViewController.swift */,
+				764EC35E22FCBD94000B0624 /* HistoryViewController.swift */,
+			);
+			path = ViewControllers;
+			sourceTree = "<group>";
+		};
+		764EC34F22FCB201000B0624 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				764EC33922FB6503000B0624 /* Assets.xcassets */,
+				764EC33B22FB6503000B0624 /* LaunchScreen.storyboard */,
+				764EC35422FCB254000B0624 /* Localizable.strings */,
+			);
+			path = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		764EC35922FCB726000B0624 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				764EC35A22FCB735000B0624 /* LoadingIndicator.swift */,
+			);
+			path = Views;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -151,6 +218,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				764EC35222FCB254000B0624 /* Localizable.strings in Resources */,
 				764EC33D22FB6503000B0624 /* LaunchScreen.storyboard in Resources */,
 				764EC34522FB6CF0000B0624 /* GoogleService-Info.plist in Resources */,
 				764EC33A22FB6503000B0624 /* Assets.xcassets in Resources */,
@@ -244,8 +312,16 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				764EC33522FB6502000B0624 /* ViewController.swift in Sources */,
+				764EC33522FB6502000B0624 /* ScanViewController.swift in Sources */,
+				764EC35822FCB56A000B0624 /* Helpers.swift in Sources */,
 				764EC33322FB6502000B0624 /* AppDelegate.swift in Sources */,
+				764EC35F22FCBD94000B0624 /* HistoryViewController.swift in Sources */,
+				764EC35D22FCB84E000B0624 /* UIView+Constraints.swift in Sources */,
+				764EC34822FB7CB2000B0624 /* UIButton+Appearance.swift in Sources */,
+				764EC35B22FCB735000B0624 /* LoadingIndicator.swift in Sources */,
+				764EC34C22FCA424000B0624 /* UIImage+Rotation.swift in Sources */,
+				764EC34A22FB7F0A000B0624 /* ResultViewController.swift in Sources */,
+				764EC35622FCB2B4000B0624 /* String+Localize.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -266,6 +342,14 @@
 				764EC33C22FB6503000B0624 /* Base */,
 			);
 			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		764EC35422FCB254000B0624 /* Localizable.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				764EC35322FCB254000B0624 /* en */,
+			);
+			name = Localizable.strings;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */

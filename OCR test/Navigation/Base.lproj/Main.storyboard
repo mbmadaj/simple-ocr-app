@@ -12,7 +12,7 @@
         <!--History-->
         <scene sceneID="eHx-uw-Nbk">
             <objects>
-                <viewController title="History" id="PaT-cs-a9p" userLabel="History" sceneMemberID="viewController">
+                <viewController title="History" id="PaT-cs-a9p" userLabel="History" customClass="HistoryViewController" customModule="OCR_test" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="lLM-tT-u0m">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -73,7 +73,7 @@
         <!--Result-->
         <scene sceneID="Nep-Ll-fHK">
             <objects>
-                <viewController title="Results" id="1Q4-kQ-Qtp" userLabel="Result" sceneMemberID="viewController">
+                <viewController title="Result" id="1Q4-kQ-Qtp" userLabel="Result" customClass="ResultViewController" customModule="OCR_test" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="G3i-dB-ewq">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -106,6 +106,10 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="HGK-6i-Cxy"/>
                     </view>
+                    <connections>
+                        <outlet property="photoImageView" destination="K8G-FA-3Ke" id="7kL-eg-aTx"/>
+                        <outlet property="resultTextView" destination="0xn-KF-hDK" id="1yF-3J-kW3"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="O9U-Fd-vFZ" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -114,7 +118,7 @@
         <!--Scan-->
         <scene sceneID="d4u-QW-5v7">
             <objects>
-                <viewController title="Scan" id="hcE-LA-UmH" userLabel="Scan" sceneMemberID="viewController">
+                <viewController title="Scan" id="hcE-LA-UmH" userLabel="Scan" customClass="ScanViewController" customModule="OCR_test" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="AZ0-Ac-I7e">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -132,6 +136,9 @@
                                         <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <inset key="imageEdgeInsets" minX="16" minY="16" maxX="16" maxY="16"/>
                                         <state key="normal" image="gallery"/>
+                                        <connections>
+                                            <action selector="galleryButtonTapped:" destination="hcE-LA-UmH" eventType="touchUpInside" id="6nn-8Z-WD5"/>
+                                        </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="HX2-rH-AXl">
                                         <rect key="frame" x="0.0" y="158" width="128" height="128"/>
@@ -143,6 +150,9 @@
                                         <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <inset key="imageEdgeInsets" minX="16" minY="16" maxX="16" maxY="16"/>
                                         <state key="normal" image="camera"/>
+                                        <connections>
+                                            <action selector="cameraButtonTapped:" destination="hcE-LA-UmH" eventType="touchUpInside" id="2MQ-SA-Hcu"/>
+                                        </connections>
                                     </button>
                                 </subviews>
                             </stackView>
@@ -156,6 +166,8 @@
                     </view>
                     <navigationItem key="navigationItem" title="Scan" id="OXN-cW-ZdK"/>
                     <connections>
+                        <outlet property="cameraButton" destination="HX2-rH-AXl" id="jZt-NZ-CNr"/>
+                        <outlet property="galleryButton" destination="kDc-HJ-3hM" id="1aV-hl-fC5"/>
                         <segue destination="1Q4-kQ-Qtp" kind="show" identifier="ShowResult" id="pUU-Sq-tbo"/>
                     </connections>
                 </viewController>
@@ -190,7 +202,7 @@
                     <tabBarItem key="tabBarItem" title="Scan" image="scan" id="yan-wW-mVr"/>
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="e4H-ky-ykq">
-                        <rect key="frame" x="0.0" y="20" width="320" height="44"/>
+                        <rect key="frame" x="0.0" y="20" width="320" height="50"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
                     <nil name="viewControllers"/>
@@ -202,11 +214,11 @@
             </objects>
             <point key="canvasLocation" x="63.75" y="-35"/>
         </scene>
-        <!--Recent-->
+        <!--History-->
         <scene sceneID="I6h-cU-r9i">
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="ymu-D0-L2p" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Recent" image="recent" id="ac6-EC-0Ki"/>
+                    <tabBarItem key="tabBarItem" title="History" image="recent" id="ac6-EC-0Ki"/>
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="Mxs-SR-fTj">
                         <rect key="frame" x="0.0" y="20" width="320" height="50"/>
