@@ -49,18 +49,27 @@ class ScanViewController: UIViewController {
         present(picker, animated: true)
     }
 
+    // MARK: Navigation
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         if segue.identifier == "ShowResult" {
-            guard let data = sender as? [String: Any] else {
+            guard
+                let data = sender as? [String: Any],
+                let image = data["image"] as? UIImage,
+                let result = data["result"] as? String
+            else {
                 return
             }
             let controller = segue.destination as? ResultViewController
-            controller?.instantiate(image: data["image"] as? UIImage, result: data["result"] as? String)
+            controller?.instantiate(image: image, result: result)
+            if !result.isEmpty {
+                let _ = DatabaseManager.shared.insertHistoryEntry(name: "project-\(DatabaseManager.shared.fetchedResultsController.fetchedObjects?.count ?? 0)", text: result, imageData: image.pngData())
+            }
         }
         super.prepare(for: segue, sender: sender)
     }
 }
 
+// MARK: UIImagePickerControllerDelegate
 extension ScanViewController: UIImagePickerControllerDelegate, UINavigationControllerDelegate {
     func imagePickerControllerDidCancel(_ picker: UIImagePickerController) {
         picker.dismiss(animated: true)
@@ -100,4 +109,3 @@ extension ScanViewController: UIImagePickerControllerDelegate, UINavigationContr
         })
     }
 }
-

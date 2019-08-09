@@ -22,6 +22,11 @@
 		764EC35B22FCB735000B0624 /* LoadingIndicator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 764EC35A22FCB735000B0624 /* LoadingIndicator.swift */; };
 		764EC35D22FCB84E000B0624 /* UIView+Constraints.swift in Sources */ = {isa = PBXBuildFile; fileRef = 764EC35C22FCB84D000B0624 /* UIView+Constraints.swift */; };
 		764EC35F22FCBD94000B0624 /* HistoryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 764EC35E22FCBD94000B0624 /* HistoryViewController.swift */; };
+		764EC36222FCCB06000B0624 /* OCRResults.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 764EC36022FCCB06000B0624 /* OCRResults.xcdatamodeld */; };
+		764EC37322FCD3D3000B0624 /* DatabaseManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 764EC37222FCD3D3000B0624 /* DatabaseManager.swift */; };
+		764EC37522FCD76F000B0624 /* StoredImagesManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 764EC37422FCD76F000B0624 /* StoredImagesManager.swift */; };
+		764EC37722FCEFE7000B0624 /* DataFormatter+Caching.swift in Sources */ = {isa = PBXBuildFile; fileRef = 764EC37622FCEFE7000B0624 /* DataFormatter+Caching.swift */; };
+		764EC37922FCFE78000B0624 /* HistoryEntryTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 764EC37822FCFE78000B0624 /* HistoryEntryTableViewCell.swift */; };
 		A4D54513D5612E0EE1A49226 /* Pods_OCR_test.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8FAC4C01D91927DE69E6FA33 /* Pods_OCR_test.framework */; };
 /* End PBXBuildFile section */
 
@@ -44,6 +49,11 @@
 		764EC35A22FCB735000B0624 /* LoadingIndicator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoadingIndicator.swift; sourceTree = "<group>"; };
 		764EC35C22FCB84D000B0624 /* UIView+Constraints.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+Constraints.swift"; sourceTree = "<group>"; };
 		764EC35E22FCBD94000B0624 /* HistoryViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HistoryViewController.swift; sourceTree = "<group>"; };
+		764EC36122FCCB06000B0624 /* OCRResults.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = OCRResults.xcdatamodel; sourceTree = "<group>"; };
+		764EC37222FCD3D3000B0624 /* DatabaseManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DatabaseManager.swift; sourceTree = "<group>"; };
+		764EC37422FCD76F000B0624 /* StoredImagesManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StoredImagesManager.swift; sourceTree = "<group>"; };
+		764EC37622FCEFE7000B0624 /* DataFormatter+Caching.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "DataFormatter+Caching.swift"; sourceTree = "<group>"; };
+		764EC37822FCFE78000B0624 /* HistoryEntryTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HistoryEntryTableViewCell.swift; sourceTree = "<group>"; };
 		8FAC4C01D91927DE69E6FA33 /* Pods_OCR_test.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_OCR_test.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		F5AA51FFE6143584F06ACD84 /* Pods-OCR test.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-OCR test.debug.xcconfig"; path = "Target Support Files/Pods-OCR test/Pods-OCR test.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -98,6 +108,7 @@
 		764EC33122FB6502000B0624 /* OCR test */ = {
 			isa = PBXGroup;
 			children = (
+				764EC36322FCCC6E000B0624 /* Database */,
 				764EC35922FCB726000B0624 /* Views */,
 				764EC34F22FCB201000B0624 /* Supporting Files */,
 				764EC34E22FCB10D000B0624 /* ViewControllers */,
@@ -118,6 +129,7 @@
 				764EC35522FCB2B4000B0624 /* String+Localize.swift */,
 				764EC35722FCB56A000B0624 /* Helpers.swift */,
 				764EC35C22FCB84D000B0624 /* UIView+Constraints.swift */,
+				764EC37622FCEFE7000B0624 /* DataFormatter+Caching.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -154,8 +166,19 @@
 			isa = PBXGroup;
 			children = (
 				764EC35A22FCB735000B0624 /* LoadingIndicator.swift */,
+				764EC37822FCFE78000B0624 /* HistoryEntryTableViewCell.swift */,
 			);
 			path = Views;
+			sourceTree = "<group>";
+		};
+		764EC36322FCCC6E000B0624 /* Database */ = {
+			isa = PBXGroup;
+			children = (
+				764EC36022FCCB06000B0624 /* OCRResults.xcdatamodeld */,
+				764EC37222FCD3D3000B0624 /* DatabaseManager.swift */,
+				764EC37422FCD76F000B0624 /* StoredImagesManager.swift */,
+			);
+			path = Database;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -313,6 +336,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				764EC33522FB6502000B0624 /* ScanViewController.swift in Sources */,
+				764EC37922FCFE78000B0624 /* HistoryEntryTableViewCell.swift in Sources */,
 				764EC35822FCB56A000B0624 /* Helpers.swift in Sources */,
 				764EC33322FB6502000B0624 /* AppDelegate.swift in Sources */,
 				764EC35F22FCBD94000B0624 /* HistoryViewController.swift in Sources */,
@@ -320,8 +344,12 @@
 				764EC34822FB7CB2000B0624 /* UIButton+Appearance.swift in Sources */,
 				764EC35B22FCB735000B0624 /* LoadingIndicator.swift in Sources */,
 				764EC34C22FCA424000B0624 /* UIImage+Rotation.swift in Sources */,
+				764EC37522FCD76F000B0624 /* StoredImagesManager.swift in Sources */,
+				764EC37322FCD3D3000B0624 /* DatabaseManager.swift in Sources */,
+				764EC37722FCEFE7000B0624 /* DataFormatter+Caching.swift in Sources */,
 				764EC34A22FB7F0A000B0624 /* ResultViewController.swift in Sources */,
 				764EC35622FCB2B4000B0624 /* String+Localize.swift in Sources */,
+				764EC36222FCCB06000B0624 /* OCRResults.xcdatamodeld in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -533,6 +561,19 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		764EC36022FCCB06000B0624 /* OCRResults.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				764EC36122FCCB06000B0624 /* OCRResults.xcdatamodel */,
+			);
+			currentVersion = 764EC36122FCCB06000B0624 /* OCRResults.xcdatamodel */;
+			path = OCRResults.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
 	};
 	rootObject = 764EC32722FB6502000B0624 /* Project object */;
 }

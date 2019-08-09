@@ -21,35 +21,50 @@
                                 <rect key="frame" x="0.0" y="64" width="320" height="367"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <prototypes>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" accessoryType="disclosureIndicator" indentationWidth="10" textLabel="kMa-IB-aAJ" detailTextLabel="MoD-HO-4v6" imageView="YNQ-ba-utS" style="IBUITableViewCellStyleSubtitle" id="gTl-S8-p2a">
-                                        <rect key="frame" x="0.0" y="28" width="320" height="44"/>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" accessoryType="disclosureIndicator" indentationWidth="10" reuseIdentifier="HistoryCell" rowHeight="70" id="gTl-S8-p2a" customClass="HistoryEntryTableViewCell" customModule="OCR_test" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="28" width="320" height="70"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="gTl-S8-p2a" id="2ad-ib-fgv">
-                                            <rect key="frame" x="0.0" y="0.0" width="287" height="43.5"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="287" height="69.5"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
-                                                <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" insetsLayoutMarginsFromSafeArea="NO" text="Fragment of scanned text" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="kMa-IB-aAJ">
-                                                    <rect key="frame" x="91" y="5" width="194" height="20.5"/>
-                                                    <autoresizingMask key="autoresizingMask"/>
-                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                                    <nil key="textColor"/>
-                                                    <nil key="highlightedColor"/>
-                                                </label>
-                                                <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" insetsLayoutMarginsFromSafeArea="NO" text="Scanned at:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="MoD-HO-4v6">
-                                                    <rect key="frame" x="91" y="25.5" width="67.5" height="14.5"/>
-                                                    <autoresizingMask key="autoresizingMask"/>
-                                                    <fontDescription key="fontDescription" type="system" pointSize="12"/>
-                                                    <nil key="textColor"/>
-                                                    <nil key="highlightedColor"/>
-                                                </label>
-                                                <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" image="test" id="YNQ-ba-utS">
-                                                    <rect key="frame" x="15" y="0.0" width="61" height="43.5"/>
-                                                    <autoresizingMask key="autoresizingMask"/>
+                                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="Ifl-Aj-5ms">
+                                                    <rect key="frame" x="15" y="15" width="60" height="40"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="height" constant="40" id="0ca-Ii-waV"/>
+                                                        <constraint firstAttribute="width" constant="60" id="jqm-Do-eB4"/>
+                                                    </constraints>
                                                 </imageView>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Text" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="JjX-aw-4qO">
+                                                    <rect key="frame" x="83" y="6" width="204" height="18"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1v8-hV-oz8">
+                                                    <rect key="frame" x="83" y="32" width="204" height="29.5"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="11"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
                                             </subviews>
+                                            <constraints>
+                                                <constraint firstItem="1v8-hV-oz8" firstAttribute="leading" secondItem="Ifl-Aj-5ms" secondAttribute="trailing" constant="8" id="1eU-W6-V0Q"/>
+                                                <constraint firstItem="Ifl-Aj-5ms" firstAttribute="centerY" secondItem="2ad-ib-fgv" secondAttribute="centerY" id="7S8-Ih-Qw0"/>
+                                                <constraint firstItem="JjX-aw-4qO" firstAttribute="leading" secondItem="Ifl-Aj-5ms" secondAttribute="trailing" constant="8" id="EnE-M5-go5"/>
+                                                <constraint firstItem="Ifl-Aj-5ms" firstAttribute="leading" secondItem="2ad-ib-fgv" secondAttribute="leading" constant="15" id="FQ2-ke-4dT"/>
+                                                <constraint firstAttribute="trailing" secondItem="JjX-aw-4qO" secondAttribute="trailing" id="IZP-rI-Frc"/>
+                                                <constraint firstAttribute="bottom" secondItem="1v8-hV-oz8" secondAttribute="bottom" constant="8" id="NI8-1h-URr"/>
+                                                <constraint firstItem="1v8-hV-oz8" firstAttribute="top" secondItem="JjX-aw-4qO" secondAttribute="bottom" constant="8" id="f09-hC-6XG"/>
+                                                <constraint firstAttribute="trailing" secondItem="1v8-hV-oz8" secondAttribute="trailing" id="qPq-1B-Kpi"/>
+                                                <constraint firstItem="JjX-aw-4qO" firstAttribute="top" secondItem="2ad-ib-fgv" secondAttribute="top" constant="6" id="yIS-81-59w"/>
+                                            </constraints>
                                         </tableViewCellContentView>
                                         <connections>
-                                            <segue destination="1Q4-kQ-Qtp" kind="show" id="CJC-1y-ldX"/>
+                                            <outlet property="currentImageVIew" destination="Ifl-Aj-5ms" id="cOe-c1-vqJ"/>
+                                            <outlet property="dateLabel" destination="1v8-hV-oz8" id="dd0-g1-QZb"/>
+                                            <outlet property="textFragmentLabel" destination="JjX-aw-4qO" id="s3f-iD-RhT"/>
+                                            <segue destination="1Q4-kQ-Qtp" kind="show" identifier="ShowResult" id="CJC-1y-ldX"/>
                                         </connections>
                                     </tableViewCell>
                                 </prototypes>
@@ -65,6 +80,9 @@
                         <viewLayoutGuide key="safeArea" id="g2t-cP-NJe"/>
                     </view>
                     <navigationItem key="navigationItem" title="History" id="uwi-uC-shI"/>
+                    <connections>
+                        <outlet property="tableView" destination="QE1-oi-1EB" id="vNP-6o-zQF"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="hZ1-18-gZW" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -84,7 +102,7 @@
                                     <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="test" translatesAutoresizingMaskIntoConstraints="NO" id="K8G-FA-3Ke">
                                         <rect key="frame" x="0.0" y="0.0" width="140" height="367"/>
                                     </imageView>
-                                    <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" alwaysBounceHorizontal="YES" bouncesZoom="NO" editable="NO" text="aaaa" translatesAutoresizingMaskIntoConstraints="NO" id="0xn-KF-hDK">
+                                    <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" alwaysBounceHorizontal="YES" bouncesZoom="NO" editable="NO" text="converted text goes here" translatesAutoresizingMaskIntoConstraints="NO" id="0xn-KF-hDK">
                                         <rect key="frame" x="150" y="0.0" width="140" height="367"/>
                                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
@@ -202,7 +220,7 @@
                     <tabBarItem key="tabBarItem" title="Scan" image="scan" id="yan-wW-mVr"/>
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="e4H-ky-ykq">
-                        <rect key="frame" x="0.0" y="20" width="320" height="50"/>
+                        <rect key="frame" x="0.0" y="20" width="320" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
                     <nil name="viewControllers"/>
@@ -221,7 +239,7 @@
                     <tabBarItem key="tabBarItem" title="History" image="recent" id="ac6-EC-0Ki"/>
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="Mxs-SR-fTj">
-                        <rect key="frame" x="0.0" y="20" width="320" height="50"/>
+                        <rect key="frame" x="0.0" y="20" width="320" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
                     <nil name="viewControllers"/>

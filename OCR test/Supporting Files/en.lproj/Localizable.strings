@@ -1,2 +1,3 @@
 "error_alert_title" = "Ooops!";
 "no_text_detected" = "😢 Unfortunately no text has been detected. Please try again with different image.";
+"created_at" = "Created at: %@";

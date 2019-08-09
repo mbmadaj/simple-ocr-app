@@ -34,11 +34,4 @@ class ResultViewController: UIViewController {
             resultTextView.text = "no_text_detected".localized
         }
     }
-
-    override func viewWillDisappear(_ animated: Bool) {
-        if let result = result, result.isEmpty == false {
-            // TODO: qualifies for saving to database
-        }
-        super.viewWillDisappear(animated)
-    }
 }
